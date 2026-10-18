@@ -6,7 +6,7 @@ Free, offline Android screen recording with internal lecture audio and optional 
 
 ## Install on a phone
 
-Download the APK provided with this repository, open it and allow installation from that browser or file manager only when Android asks. You can turn that permission off after installation. No laptop, Python, Termux or root is needed.
+Download the latest APK from this repository's [Releases](https://github.com/AKASH991833/lecture-recorder-app/releases) page, open it and allow installation from that browser or file manager only when Android asks. You can turn that permission off after installation. No laptop, Python, Termux or root is needed.
 
 1. Open Lecture Recorder.
 2. Keep the default **Auto: internal, silent ho to mic backup**. Other options: Internal + mic mix, Sirf mic, Bina audio, Sirf internal (no backup).
@@ -54,7 +54,7 @@ Record only material you have permission to record. Full-screen capture can incl
 
 ## Source and build
 
-The complete Gradle source is included in `4-lecture-recorder-source.zip` (excluding build files, local paths and signing keys). Extract it, install Android SDK 34 and Java 17, then run `./gradlew :app:assembleDebug` (`gradlew.bat` on Windows). Output: `app/build/outputs/apk/debug/app-debug.apk`.
+The complete Gradle source is included in `lecture-recorder-source-v1.0.1.zip` (excluding build files, local paths and signing keys). Extract it, install Android SDK 34 and Java 17, then run `./gradlew :app:assembleDebug` (`gradlew.bat` on Windows). Output: `app/build/outputs/apk/debug/app-debug.apk`.
 
 The supplied APK is a debug-signed sideload build, not a Play Store release. Android may warn for an unknown developer. No special accessibility, overlay or device-admin permission is needed. For a published production app, use your own private signing key; never put a signing key in the public repository.
 
